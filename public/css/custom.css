@@ -1,0 +1,9 @@
+body {
+    background-image: url('/images/pattern.png');
+}
+.quote {
+  margin-top: 10em;
+}
+.author {
+  text-align: right;
+}
