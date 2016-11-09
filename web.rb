@@ -27,7 +27,7 @@ get '/' do
     ['The trip to Tanzania with you. Giving out food to the people on the street in Mwanza, who kicked off about there being jam on the sandwiches!', 'Tommy'],
     ['Feeling cool at the back of the room when you were telling jokes at a "gig"!', 'Benny'],
     ['', 'Katy'],
-    ['Getting me my first Playstation for Christmas. I remember hearing you in the kitchen calling round all the different electronics stores and they\'d sold out – I wasn\'t sure you\'d managed to get one until I opened it on the big day!', 'Tommy'],
+    ['Getting me my first Playstation for Christmas. I remember hearing you in the kitchen calling round all the different electronics stores and they\'d sold out - I wasn\'t sure you\'d managed to get one until I opened it on the big day!', 'Tommy'],
     ['Feeling more embarrassed than you did after I slapped your bald head and ran off shouting "slap head" while you were talking to some folk.', 'Benny'],
     ['', 'Katy'],
     ['Making us kids (well in my head you made us) do mini-church services on Sunday mornings when we were away on holiday.', 'Tommy'],
