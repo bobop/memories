@@ -1,7 +1,7 @@
 require 'sinatra'
 
 get '/' do
-  @days_since_nov_11 = params[:days] ? params[:days].to_i : (Date.today - Date.parse('11/11/2016')).to_i
+  @days_since_nov_11 = params[:days] ? params[:days].to_i : (Date.today - Date.parse('12/11/2016')).to_i
 
   memory_array = [
     ['When you asked a homeless man if you could buy him any food and ended up just buying him an onion.', 'Benny'],
@@ -48,22 +48,22 @@ get '/' do
     ['Walking through West Park school when me and Baxter were on work experience at the church and loads of the kids knowing your name! Not sure if it was pride or embaressment, maybe both.', 'Tommy'],
     ['When you told me to punch my friend Charles in the stomach if he upset me again!', 'Benny'],
     ['', 'Katy'],
-    ['Doing a great preach at our wedding... you hadn\'t been asked to preach but couldn’t resist. It was appreciated though!', 'Tommy'],
+    ['Doing a great preach at our wedding... you hadn\'t been asked to preach but couldn\'t resist. It was appreciated though!', 'Tommy'],
     ['Cheering me on in one of my few football matches for Emmanuel School.', 'Benny'],
     ['', 'Katy'],
     ['Doing a talk at "youth group" at the Riverside Centre about sex and saying "don\'t touch what you don\'t have". CRINGE.', 'Tommy'],
     ['When you taught me how to juggle in your office in Juniper Lodge.', 'Benny'],
     ['', 'Katy'],
     ['Your big hand coming into the back of the car to squeeze one of our legs when we were being naughty on long road trips!', 'Tommy'],
-    ['', 'Benny'],
+    ['Feeling really embarrassed at McDonalds with Tom, Katy and you when you told 2 lads at the next table (who were around the same age as me) to stop swearing because you had your kids with you.', 'Benny'],
     ['', 'Katy'],
     ['Thinking it was really cool that my dad "toured" with a band.', 'Tommy'],
     ['', 'Benny'],
     ['', 'Katy'],
-    ['Getting back from one of your Africa trips when I was about 5/6 and waking me up at North Street to give me a present, which was a VHS of The Jungle Book. Took me another 5 years to work out you didn’t buy that in Africa.', 'Tommy'],
+    ['Getting back from one of your Africa trips when I was about 5/6 and waking me up at North Street to give me a present, which was a VHS of The Jungle Book. Took me another 5 years to work out you didn\'t buy that in Africa.', 'Tommy'],
     ['', 'Benny'],
     ['', 'Katy'],
-    ['Doing something to upset mum (that we never knew about) and then coming in with some flowers, going back out, coming back with some chocolates, going back, coming back with a dress etc etc. Mum still wasn’t impressed!', 'Tommy'],
+    ['Doing something to upset mum (that we never knew about) and then coming in with some flowers, going back out, coming back with some chocolates, going back, coming back with a dress etc etc. Mum still wasn\'t impressed!', 'Tommy'],
     ['Wanting that Beatles album for years and being really disappointed every time you opened a present and it wasn\'t it – you had to get it yourself in the end.', 'Tommy'],
     ['When your tour bus got robbed in Estonia and you came home and told us kids all the "presents" you\'d bought us that were in the back of the van but got stolen... cricket bat, tennis racket... yeah right!', 'Tommy'],
     ['Always being the parent I\'d ask if I wanted anything because you\'re soft!', 'Tommy'],
@@ -72,4 +72,9 @@ get '/' do
   @memory = memory_array[@days_since_nov_11]
 
   erb :index
+end
+
+get '/bg' do
+  number = rand(0..9)
+  send_file File.expand_path("images/pattern_#{number}.png", settings.public_folder)
 end
