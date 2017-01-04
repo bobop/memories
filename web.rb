@@ -37,7 +37,7 @@ get '/' do
     ['When you taught me to drive and advised me that the main thing to remember is that everyone else on the road are idiots and if I remember that I\'ll get on ok. How true!', 'Katy'],
     ['When we lived at North Street and our neighbour\'s house got robbed, I was scared and couldn\'t sleep and you said that no robbers would dare come to our house because you lived there and you\'re big and strong, which I was clearly satisfied with and slept like a baby.', 'Tommy'],
     ['Playing with you on my new Commodore 64 in the back room at Nanan and Bobop\'s.', 'Benny'],
-    ['When you were trying to get us to eat our vegetables you would say ‘peas and sweet corn are like little sweets on your plate!\' But mainly you would want us to eat up the meat as a priority..slightly obsessed with protein?!', 'Katy'],
+    ['When you were trying to get us to eat our vegetables you would say "peas and sweet corn are like little sweets on your plate!" But mainly you would want us to eat up the meat as a priority..slightly obsessed with protein?!', 'Katy'],
     ['Walking through West Park school when me and Baxter were on work experience at the church and loads of the kids knowing your name! Not sure if it was pride or embaressment, maybe both.', 'Tommy'],
     ['When you told me to punch my friend Charles in the stomach if he upset me again!', 'Benny'],
     ['When you would make your tasty pasta I thought yey not mums bland food today!! Hehe', 'Katy'],
