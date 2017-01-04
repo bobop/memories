@@ -1,8 +1,6 @@
 require 'sinatra'
 
 get '/' do
-  @days_since_nov_11 = params[:days] ? params[:days].to_i : (Date.today - Date.parse('12/11/2016')).to_i
-
   memory_array = [
     ['When you asked a homeless man if you could buy him any food and ended up just buying him an onion.', 'Benny'],
     ['Growing a goatee and then mum making you shave it off within a day.', 'Tommy'],
@@ -33,29 +31,34 @@ get '/' do
     ['Wrestling with you and my brothers and mum would say "it will end in tears" and it usually did! Was really fun though.', 'Katy'],
     ['Singing Roxy Music songs in the kitchen.', 'Tommy'],
     ['When you supported us after Amy died by encouraging us to see and hold her.', 'Benny'],
+    ['That time when dad went on tour with "The Name" (what a name?!). You were about to go on a European tour and me and Abigail Stamp didn\'t want to miss our daddy\'s so we had a big plan to hop on the back of the tour bus as you were leaving and come with you! Obviously we must have realised this was a stupid idea as we didn\'t do it!', 'Katy'],
     ['Making us bacon sandwiches after school as a "pre-dinner snack" about an hour before dinner!', 'Tommy'],
     ['Recording videos of you looking like a baby in a nappy for a "baby left, baby right" game.', 'Benny'],
+    ['When you taught me to drive and advised me that the main thing to remember is that everyone else on the road are idiots and if I remember that I\'ll get on ok. How true!', 'Katy'],
     ['When we lived at North Street and our neighbour\'s house got robbed, I was scared and couldn\'t sleep and you said that no robbers would dare come to our house because you lived there and you\'re big and strong, which I was clearly satisfied with and slept like a baby.', 'Tommy'],
     ['Playing with you on my new Commodore 64 in the back room at Nanan and Bobop\'s.', 'Benny'],
+    ['When you were trying to get us to eat our vegetables you would say ‘peas and sweet corn are like little sweets on your plate!\' But mainly you would want us to eat up the meat as a priority..slightly obsessed with protein?!', 'Katy'],
     ['Walking through West Park school when me and Baxter were on work experience at the church and loads of the kids knowing your name! Not sure if it was pride or embaressment, maybe both.', 'Tommy'],
     ['When you told me to punch my friend Charles in the stomach if he upset me again!', 'Benny'],
+    ['When you would make your tasty pasta I thought yey not mums bland food today!! Hehe', 'Katy'],
     ['Doing a great preach at our wedding... you hadn\'t been asked to preach but couldn\'t resist. It was appreciated though!', 'Tommy'],
     ['Cheering me on in one of my few football matches for Emmanuel School.', 'Benny'],
+    ['For teaching me how to make your tasty pasta, with balsamic vinegar and plenty of pepper! Mmmmmm ', 'Katy'],
     ['Doing a talk at "youth group" at the Riverside Centre about sex and saying "don\'t touch what you don\'t have". CRINGE.', 'Tommy'],
     ['When you taught me how to juggle in your office in Juniper Lodge.', 'Benny'],
+    ['Teaching me about pasta and pesto, still a faves of mine and I have spread the word. When Imo went to uni I sent her with pasta and pesto and said that as long as she had that she would never be hungry!', 'Katy'],
     ['Your big hand coming into the back of the car to squeeze one of our legs when we were being naughty on long road trips!', 'Tommy'],
     ['Feeling really embarrassed at McDonalds with Tom, Katy and you when you told 2 lads at the next table (who were around the same age as me) to stop swearing because you had your kids with you.', 'Benny'],
     ['Thinking it was really cool that my dad "toured" with a band.', 'Tommy'],
     ['You being really proud of your UMBRO t-shirt because it meant you were cool and down with the kids... in your mind!', 'Benny'],
     ['Getting back from one of your Africa trips when I was about 5/6 and waking me up at North Street to give me a present, which was a VHS of The Jungle Book. Took me another 5 years to work out you didn\'t buy that in Africa.', 'Tommy'],
-    ['', 'Benny'],
     ['Doing something to upset mum (that we never knew about) and then coming in with some flowers, going back out, coming back with some chocolates, going back, coming back with a dress etc etc. Mum still wasn\'t impressed!', 'Tommy'],
     ['Wanting that Beatles album for years and being really disappointed every time you opened a present and it wasn\'t it - you had to get it yourself in the end.', 'Tommy'],
     ['When your tour bus got robbed in Estonia and you came home and told us kids all the "presents" you\'d bought us that were in the back of the van but got stolen... cricket bat, tennis racket... yeah right!', 'Tommy'],
     ['Always being the parent I\'d ask if I wanted anything because you\'re soft!', 'Tommy'],
     ['Wrestling on the living room floor. Mum getting upset and saying "it will end in tears" and me often thinking you were going to kill Ben because he\'s got a weak heart!', 'Tommy']
   ]
-  @memory = memory_array[@days_since_nov_11]
+  @memory = memory_array.sample
 
   erb :index
 end
